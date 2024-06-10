@@ -7,7 +7,7 @@ import (
 
 func renameFile(dir string) {
 	files, _ := os.ReadDir(dir)
-	str := "【海量资源：】"
+	str := "-更多资源访问Shikey.com"
 	for _, file := range files {
 		if file.IsDir() {
 			renameFile(dir + "\\" + file.Name())
